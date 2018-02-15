@@ -13,7 +13,7 @@ const mapTo = require('callbag-map-to');
 
 const source = mapTo('foo')(fromIter([1,2,3]));
 
-iterate(x => console.log(x))(source); // 'foo'
+forEach(x => console.log(x))(source); // 'foo'
                                       // 'foo'
                                       // 'foo'
 ```
