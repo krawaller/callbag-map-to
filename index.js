@@ -3,4 +3,4 @@ const mapTo = v => source => (start, sink) => {
   source(0, (t, d) => sink(t, t === 1 ? v : d));
 };
 
-module.exports = mapTo;
+export default mapTo;
