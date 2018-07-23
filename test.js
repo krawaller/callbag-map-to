@@ -1,6 +1,6 @@
 const test = require('tape');
 const makeMockCallbag = require('callbag-mock');
-const mapTo = require('./index');
+const mapTo = require('.');
 
 test('it maps data to a fixed value and hands along terminations', t => {
   const source = makeMockCallbag(true);
